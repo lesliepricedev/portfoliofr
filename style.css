@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+    color: #c2703d;
+}
+/* texto del logo cortado */
+@media (max-width: 576px) {
+    .navbar-brand {
+        font-size: 0.9rem;
+        white-space: normal;
+    }
+    .navbar-collapse {
+        padding-top: 10px;
+    }
+}
+
+.logo-item:hover img {
+    transform: scale(1.08);
+}
+.logo-item img {
+    transition: transform 0.3s ease;
+}
+/* forzar el height del video para adaptar mi video de figma mal encuadrado*/
+.carousel-inner video {
+    height: 400px; 
+    object-fit: cover;
+    border-radius: 15px; /
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2); 
+
+/*info label fuera del video porque sino no se ve bien*/
+.carousel-caption-custom {
+    text-align: center;
+    padding: 20px 0;
+    color: #333; 
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.carousel-inner video {
+    height: 450px; 
+    object-fit: cover;
+    /* width: 100%;
+    object-position: center; no funciono como queria*/
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+}
+
+.carousel-caption-custom {
+    padding-top: 20px;
+    text-align: center;
+    color: #c2703d;
+}

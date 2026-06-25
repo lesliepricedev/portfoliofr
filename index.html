@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="./style.css">
+    <title>PortfolioLeslie</title>
+
+</head>
+<body>
+    <header class="sticky-top bg-white shadow-sm">
+        <nav class="navbar navbar-expand-lg" style="background-color: #006a6a;" data-bs-theme="dark">
+
+            <a class="navbar-brand fw-bold" href="#">Leslie Price | Desarrolladora Web &amp; CMS</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#hero">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sobreMi">Sobre mí</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#proyectos">Proyectos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="hero" class="py-5 bg-light">
+            <div class="container py-5">
+                <div class="row align-items-center">
+                    <div class="col-md-7">
+                        <h1 class="display-4 fw-bold mb-3">Desarrolladora Web Front-end &amp; Integradora CMS</h1>
+                        <p class="lead text-muted mb-4">
+                            Donde la lógica encuentra al arte. Creo experiencias digitales funcionales y estructuradas a través del código, sin perder la mirada estética y sensible de mi recorrido en la creación visual.
+                        </p>
+                        <div class="d-flex gap-3">
+                            <a href="#proyectos" class="btn btn-dark btn-lg">Ver Proyectos</a>
+                            <a href="#sobreMi" class="btn btn-outline-secondary btn-lg">Sobre mí</a>
+                        </div>
+                    </div>
+                    <div class="col-md-5 text-center mt-4 mt-md-0">
+                         <img src="./assets/dev.png" alt="Leslie Price" class="img-fluid" style="max-width: 280px;">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="sobreMi" class="py-5">
+            <div class="container py-5">
+               
+                <div class="row mb-5 text-center justify-content-center g-4">
+                    <div class="col-lg-8">
+                        <!-- <span class="text-uppercase text-muted tracking-wider small d-block mb-4">Mi Historia</span> -->
+                         <h2 class="text-center mb-4">Mi Historia</h2>
+                        <h2 class="h1 fw-bold mb-4">Diseñando con código, pensando con el alma</h2>
+                        <p class="text-secondary lead">
+                            Vengo del mundo de la mediación artística, la escenografía y el análisis de necesidades humanas. Hoy, integro esa sensibilidad con el desarrollo web. Estoy cursando la especialización Front-end en la UTN y ampliando mis herramientas tecnológicas para construir sitios accesibles y con propósito.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center text-center">
+
+                    <div class="col-lg-8 d-flex align-items-center justify-content-center gap-3 gap-md-5">
+                        
+                        <div class="d-flex flex-column gap-4 align-items-center">
+                            <div style="cursor: pointer; max-width: 90px;" data-bs-toggle="modal" data-bs-target="#modalEscenografa">
+                                <img src="./assets/escenografa.png" alt="Escenógrafa" class="img-fluid">
+                            </div>
+                            <div style="cursor: pointer; max-width: 90px;" data-bs-toggle="modal" data-bs-target="#modalArtist">
+                                <img src="./assets/stop-motion.png" alt="Artista &amp; Animación" class="img-fluid">
+                            </div>
+                        </div>
+
+                        <div style="max-width: 240px; min-width: 160px;" class="mx-2">
+                            <img src="./assets/perfilColor.png" alt="Leslie Price" class="img-fluid">
+                        </div>
+
+                        <div class="d-flex flex-column gap-4 align-items-center">
+                            <div style="cursor: pointer; max-width: 90px;" data-bs-toggle="modal" data-bs-target="#modalTerapeuta">
+                                <img src="./assets/art-terapeuta.png" alt="Arte-terapeuta" class="img-fluid">
+                            </div>
+                            <div style="cursor: pointer; max-width: 90px;" data-bs-toggle="modal" data-bs-target="#modalCoach">
+                                <img src="./assets/coach.png" alt="Coach Digital" class="img-fluid">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+        </section>
+
+        <!-- Modal Escenógrafa,  solo texto y la cruz para cerrar-->
+        <div class="modal fade" id="modalEscenografa" tabindex="-1" aria-labelledby="modalEscenografaLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content text-center p-4">
+                    <div class="modal-header border-0">
+                        <button type="button" class="btn-close ms-auto" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body pt-0">
+                        <h4 class="fw-bold mb-3" id="modalEscenografaLabel">Escenógrafa</h4>
+                        <p class="text-secondary fs-6">Visión espacial y organización estructural de interfaces.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Artista & Animación -->
+        <div class="modal fade" id="modalArtist" tabindex="-1" aria-labelledby="modalArtistLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content text-center p-4">
+                    <div class="modal-header border-0">
+                        <button type="button" class="btn-close ms-auto" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body pt-0">
+                        <h4 class="fw-bold mb-3" id="modalArtistLabel">Artista &amp; Animación</h4>
+                        <p class="text-secondary fs-6">Atención minuciosa al detalle y narrativa visual.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Arte-terapeuta -->
+        <div class="modal fade" id="modalTerapeuta" tabindex="-1" aria-labelledby="modalTerapeutaLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content text-center p-4">
+                    <div class="modal-header border-0">
+                        <button type="button" class="btn-close ms-auto" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body pt-0">
+                        <h4 class="fw-bold mb-3" id="modalTerapeutaLabel">Arte-terapeuta</h4>
+                        <p class="text-secondary fs-6">Escucha activa y empatía para entender las necesidades reales del usuario.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Coach Digital -->
+        <div class="modal fade" id="modalCoach" tabindex="-1" aria-labelledby="modalCoachLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content text-center p-4">
+                    <div class="modal-header border-0">
+                        <button type="button" class="btn-close ms-auto" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body pt-0">
+                        <h4 class="fw-bold mb-3" id="modalCoachLabel">Coach Digital</h4>
+                        <p class="text-secondary fs-6">Pedagogía pura para hacer el código accesible a todos.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section id="proyectos" class="container py-5">
+        
+            <h2 class="text-center mb-4">Mis Proyectos</h2>
+
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <video class="d-block w-100" autoplay muted loop playsinline>
+                            <source src="./assets/FigmaApple.webm" type="video/webm">
+                        </video>
+                        <div class="carousel-caption-custom">
+                            <h5>Prototipado UI en Figma</h5>
+                            <p>Diseño de interfaces funcionales y estructuradas.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <video class="d-block w-100" autoplay muted loop playsinline>
+                            <source src="./assets/Ophelia-siteweb.webm" type="video/webm">
+                        </video>
+                        <div class="carousel-caption-custom">
+                            <h5>Integración Web - Revue Ophelia</h5>
+                            <p>Desarrollo con WordPress y entorno LocalWP.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <video class="d-block w-100" autoplay muted loop playsinline>
+                            <source src="./assets/Transmutationsite.webm" type="video/webm">
+                        </video>
+                        <div class="carousel-caption-custom">
+                            <h5>Sitio Web Transmutation</h5>
+                            <p>Experiencia digital enfocada en la estética visual.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+        </section>
+        </div>
+  
+        <section id="services" class="py-5 bg-white">
+            <div class="container">
+                <h2 class="text-center mb-5">Mis Servicios</h2>
+                <div class="row">
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100 border-0 shadow-sm">
+                            <div class="card-body text-center">
+                                <i class="bi bi-code-slash" style="font-size: 2rem; color: #006a6a;"></i>
+                                <h3 class="card-title h5 mt-3">Desarrollo Web</h3>
+                                <p class="card-text">Integración de sitios robustos y a medida utilizando WordPress, HTML5, CSS3 y Bootstrap.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100 border-0 shadow-sm">
+                            <div class="card-body text-center">
+                                <i class="bi bi-palette" style="font-size: 2rem; color: #006a6a;"></i>
+                                <h3 class="card-title h5 mt-3">Diseño de Interfaces</h3>
+                                <p class="card-text">Prototipado UI y desarrollo de aplicaciones modernas con enfoque en usabilidad usando Swift UI y JavaScript.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100 border-0 shadow-sm">
+                            <div class="card-body text-center">
+                                <i class="bi bi-shield-check" style="font-size: 2rem; color: #006a6a;"></i>
+                                <h3 class="card-title h5 mt-3">Auditoría WordPress</h3>
+                                <p class="card-text">Optimización técnica, gestión segura de backups y mejora del posicionamiento SEO para tu tranquilidad.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="py-5" style="background-color: #b3290f; color: white;">
+            <div class="container">
+                <h2 class="text-center mb-4 text-light">¿Tienes una idea en mente? Construyámosla juntos"</h2>
+                <div class="row justify-content-center">
+                    <div class="col-md-6">
+                            <div class="mb-3">
+                                <label class="form-label">Nombre</label>
+                                <input type="text" name="name" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Email</label>
+                                <input type="email" name="email" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Mensaje</label>
+                                <textarea name="message" class="form-control" rows="4" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-dark w-100">Contame sobre tu proyecto</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="text-center py-4" style="background-color: #006a6a;" data-bs-theme="dark" >
+        <p class="text-light">© 2026 Leslie Price | Todos los derechos reservados</p>
+        <div class="social-links">
+            <a href="https://linkedin.com/in/leslie-priscila-price-7370baa8" target="_blank" class="text-decoration-none text-light mx-2">
+                LinkedIn
+            </a>
+            <span>|</span>
+            <a href="https://github.com/lesliepricedev" target="_blank" class="text-decoration-none text-light mx-2">
+                GitHub
+            </a>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+ 
+</body>
+</html>
