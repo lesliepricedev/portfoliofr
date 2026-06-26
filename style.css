@@ -52,3 +52,44 @@ html {
     text-align: center;
     color: #c2703d;
 }
+/* --- ANIMATIONS ET DYNAMISME (AJOUTS) --- */
+
+/* Effet fluide de survol sur les 4 petits logos/boutons ronds de ton histoire */
+.logo-item {
+    transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1), filter 0.3s ease;
+}
+
+.logo-item:hover {
+    transform: scale(1.15) rotate(2deg); /* Grossit légèrement et pivote subtilement */
+    filter: drop-shadow(0 8px 12px rgba(0, 0, 0, 0.15)); /* Ajoute une ombre douce */
+}
+
+/* Dynamisme sur le bouton principal d'action "Voir les Projets" */
+.btn-custom-action {
+    transition: all 0.3s ease;
+}
+.btn-custom-action:hover {
+    background-color: #c2703d !important; /* Devient orange chaud au survol */
+    border-color: #c2703d !important;
+    transform: translateY(-3px); /* S'élève légèrement */
+    box-shadow: 0 4px 12px rgba(194, 112, 61, 0.3);
+}
+
+/* Animation douce pour les cartes de services au survol */
+.card-service-custom {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card-service-custom:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.08) !important;
+}
+
+/* Bouton soumettre le projet dans la zone rouge */
+.btn-submit-custom {
+    transition: all 0.3s ease;
+}
+.btn-submit-custom:hover {
+    background-color: #006a6a !important; /* Rappel du vert de la Navbar */
+    border-color: #006a6a !important;
+    transform: scale(1.02);
+}
